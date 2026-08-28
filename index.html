@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lana Del Rey — Albums &amp; Archive</title>
+  <meta name="description" content="A one-page CSS Grid and Flexbox tribute to Lana Del Rey: albums, one-liners, and a light/dark theme." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- CSS-only theme switch: no JavaScript anywhere in this project -->
+  <input type="checkbox" id="theme-switch" class="theme-input" />
+
+  <div class="page">
+
+    <!-- ============ HERO (about 1.5/4 of the viewport) ============ -->
+    <header class="hero">
+      <img class="hero__img" src="assets/hero.jpg" alt="Lana Del Rey performing on a hazy red-lit stage" />
+      <div class="hero__veil"></div>
+      <div class="hero__copy">
+        <p class="hero__kicker">Born to die &middot; Est. 2011</p>
+        <h1 class="hero__title">Lana Del Rey</h1>
+        <p class="hero__sub">Hollywood sadcore &middot; Baroque pop &middot; American mythology</p>
+      </div>
+    </header>
+
+    <!-- ============ STICKY NAV (sticks 5px from the top) ============ -->
+    <nav class="nav">
+      <a class="nav__brand" href="#top">LDR</a>
+      <ul class="nav__list">
+        <li><a href="#albums">Albums</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tour">Tour</a></li>
+      </ul>
+      <label class="switch" for="theme-switch">
+        <span class="switch__icon switch__icon--sun">☀</span>
+        <span class="switch__track"><span class="switch__thumb"></span></span>
+        <span class="switch__icon switch__icon--moon">☾</span>
+      </label>
+    </nav>
+
+    <!-- ============ ALBUM GRID ============ -->
+    <main>
+      <section class="section" id="albums">
+        <div class="section__head">
+          <h2 class="section__title">The Discography</h2>
+          <p class="section__note">Ten records. One long American summer.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card card--wide">
+            <img class="card__img" src="assets/a1.jpg" alt="Faded blue sky and palm trees" loading="lazy" />
+            <div class="card__body">
+              <span class="card__year">2012</span>
+              <h3 class="card__title">Born to Die</h3>
+              <p class="card__line">Strings, gangsters and a heart-shaped bruise — the record that invented her world.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/a2.jpg" alt="Vintage convertible on a desert highway" loading="lazy" />
+            <div class="card__body">
+              <span class="card__year">2012</span>
+              <h3 class="card__title">Paradise</h3>
+              <p class="card__line">Eight songs of sunburnt devotion on the wrong side of the freeway.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/a3.jpg" alt="Black and white roses" loading="lazy" />
+            <div class="card__body">
+              <span class="card__year">2014</span>
+              <h3 class="card__title">Ultraviolence</h3>
+              <p class="card__line">Guitars soaked in reverb; the glamour finally starts to bleed.</p>
+            </div>
+          </article>
+
+          <article class="card card--tall">
+            <img class="card__img" src="assets/a4.jpg" alt="Pink sunset over a pier" loading="lazy" />
+            <div class="card__body">
+              <span class="card__year">2015</span>
+              <h3 class="card__title">Honeymoon</h3>
+              <p class="card__line">Slow, narcotic and cinematic — a record that moves like heat off asphalt.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/a5.jpg" alt="Neon motel sign at night" loading="lazy" />
+            <div class="card__body">
+              <span class="card__year">2017</span>
+              <h3 class="card__title">Lust for Life</h3>
+              <p class="card__line">She smiles on the cover, and the whole decade exhales with her.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/a6.jpg" alt="Faded American flag" loading="lazy" />
+            <div class="card__body">
+              <span class="card__year">2019</span>
+              <h3 class="card__title">Norman F***ing Rockwell!</h3>
+              <p class="card__line">The great American novel, delivered in piano ballads and dry humour.</p>
+            </div>
+          </article>
+
+          <article class="card card--wide">
+            <img class="card__img" src="assets/a7.jpg" alt="Empty motel swimming pool" loading="lazy" />
+            <div class="card__body">
+              <span class="card__year">2021</span>
+              <h3 class="card__title">Chemtrails Over the Country Club</h3>
+              <p class="card__line">She trades the coast for the midwest and finds quiet, folky freedom.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/a8.jpg" alt="Orange wildfire smoke over hills" loading="lazy" />
+            <div class="card__body">
+              <span class="card__year">2021</span>
+              <h3 class="card__title">Blue Banisters</h3>
+              <p class="card__line">Family, grief and repainted porches — her most private diary yet.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/a9.jpg" alt="Wooden church in a misty field" loading="lazy" />
+            <div class="card__body">
+              <span class="card__year">2023</span>
+              <h3 class="card__title">Ocean Blvd</h3>
+              <p class="card__line">Tunnels, hymns and hard questions: what happens when the myth grows up.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/a10.jpg" alt="Moonlit ocean waves at twilight" loading="lazy" />
+            <div class="card__body">
+              <span class="card__year">2026</span>
+              <h3 class="card__title">The Right Person Will Stay</h3>
+              <p class="card__line">Country dust on velvet vocals — the long goodbye she keeps rewriting.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT (grid + flex) ============ -->
+      <section class="section about" id="about">
+        <img class="about__img" src="assets/portrait.jpg" alt="Vintage-style portrait with flowers in her hair" loading="lazy" />
+        <div class="about__text">
+          <h2 class="section__title">Sad girl, big country</h2>
+          <p>Elizabeth Woolridge Grant turned nostalgia into a genre. Fifteen years of tape hiss, Chateau Marmont balconies and hymns to a country that never quite loved her back.</p>
+          <ul class="stats">
+            <li class="stat"><strong>10</strong><span>Studio albums</span></li>
+            <li class="stat"><strong>6</strong><span>Grammy nods</span></li>
+            <li class="stat"><strong>2011</strong><span>Video Games</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ TOUR (flexbox rows) ============
+      <section class="section" id="tour">
+        <div class="section__head">
+          <h2 class="section__title">On the Road</h2>
+          <p class="section__note">Selected dates for the coming season.</p>
+        </div>
+        <ul class="tour">
+          <li class="tour__row"><span class="tour__date">14 Sep</span><span class="tour__city">Los Angeles, CA</span><span class="tour__venue">Hollywood Bowl</span><span class="tour__tag">Sold out</span></li>
+          <li class="tour__row"><span class="tour__date">22 Sep</span><span class="tour__city">Nashville, TN</span><span class="tour__venue">Ryman Auditorium</span><span class="tour__tag">Few left</span></li>
+          <li class="tour__row"><span class="tour__date">05 Oct</span><span class="tour__city">London, UK</span><span class="tour__venue">Alexandra Palace</span><span class="tour__tag">On sale</span></li>
+          <li class="tour__row"><span class="tour__date">19 Oct</span><span class="tour__city">Paris, FR</span><span class="tour__venue">Salle Pleyel</span><span class="tour__tag">On sale</span></li>
+        </ul>
+      </section> -->
+    </main>
+
+    <footer class="footer">
+      <p>Made by Surbhi Badhe</p>
+    </footer>
+  </div>
+</body>
+</html>
